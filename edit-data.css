@@ -23,7 +23,6 @@
 html,
 body {
   height: 100%;
-  width: 1440px;
 }
 /*
     Typographic tweaks!
@@ -34,7 +33,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #f7f7f7;
-  width: 1440;
 }
 /*
     6. Improve media defaults
@@ -189,6 +187,14 @@ a {
   background: #707be2;
   bottom: 15px;
   right: 20px;
+  cursor: pointer;
+}
+.camera-bg label {
+  width: 64px;
+  height: 64px;
+}
+#image-upload {
+  display: none;
 }
 .camera {
   margin-top: 15px;

@@ -23,7 +23,6 @@
 html,
 body {
   height: 100%;
-  width: 1440px;
 }
 /*
     Typographic tweaks!
@@ -78,9 +77,10 @@ h6 {
 
 .topnav {
   display: flex;
-  justify-content: space-around;
-  width: 1440px;
+  justify-content: space-between;
   height: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .search-bar {
   display: flex;
@@ -133,15 +133,18 @@ h6 {
 .profile-name h2 h3 {
   font-size: 32px;
 }
-.contact {
-  position: absolute;
-  top: 639px;
-  left: 1331px;
+.contact-bar {
+  position: relative;
+  grid-column: 12/13;
+  top: 290%;
+  right: -160%;
+  z-index: 2;
 }
 .contact-detail {
   display: none;
   z-index: 2;
 }
+
 .contact:hover + .contact-detail {
   position: absolute;
   display: flex;
@@ -150,16 +153,17 @@ h6 {
   border-radius: 20px;
   width: 475px;
   height: 272px;
-  top: 330px;
-  left: 920px;
+  z-index: 2;
+  right: 17%;
+  top: -214%;
 }
-.contact-detail h2 {
+.contact-detail h3 {
+  padding-top: 9%;
+  padding-left: 11%;
+  padding-bottom: 4%;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  margin-top: 48px;
-  margin-left: 58px;
-  margin-bottom: 28px;
 }
 .whatsapp,
 .facebook {
@@ -185,7 +189,7 @@ h6 {
 .contact-detail .facebook img:nth-child(2) {
   position: absolute;
   left: 70px;
-  top: 156px;
+  top: 142px;
 }
 .contact-detail .twitter img {
   position: absolute;
@@ -194,18 +198,21 @@ h6 {
 
 .dashboard {
   background: #e5e5e5;
-  width: 1440px;
 }
 .class {
-  margin-left: 163px;
-  margin-right: 166px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .class-header {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.class-header h2 {
   padding-top: 75px;
   padding-bottom: 25px;
   font-size: 36px;
   line-height: 42px;
+  grid-column: 1/5;
 }
 .class-list {
   display: flex;
@@ -213,6 +220,7 @@ h6 {
   list-style: none;
   justify-content: space-between;
   padding-bottom: 116px;
+  gap: 30px;
 }
 .class-list li {
   display: flex;
@@ -252,10 +260,11 @@ h6 {
   line-height: 30px;
 }
 .score-history {
-  margin-left: 163px;
-  margin-right: 166px;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 396px;
   display: flex;
+  margin-bottom: 40px;
 }
 .score-predicted h1 {
   font-size: 48px;
@@ -277,4 +286,5 @@ h6 {
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
+  margin-bottom: 50px;
 }

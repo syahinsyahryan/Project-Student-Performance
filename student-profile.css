@@ -33,7 +33,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #f7f7f7;
-  width: 1440;
 }
 /*
     6. Improve media defaults
@@ -86,7 +85,7 @@ a {
   margin-bottom: 80px;
 }
 .header {
-  grid-column: 2/5;
+  grid-column: 2/10;
 }
 .header h1 {
   font-style: normal;
@@ -197,7 +196,7 @@ a {
   width: 283px;
 }
 .name {
-  grid-column: 2/10;
+  grid-column: 2/11;
   grid-row: 4/6;
   text-align: center;
 }

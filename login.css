@@ -23,7 +23,6 @@
 html,
 body {
   height: 100%;
-  width: 1440px;
 }
 /*
     Typographic tweaks!
@@ -33,8 +32,6 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-
-  width: 1440;
 }
 /*
     6. Improve media defaults
@@ -84,6 +81,7 @@ a {
   position: absolute;
   z-index: -1;
 }
+
 .login-page {
   display: flex;
   justify-content: space-around;
