@@ -263,10 +263,11 @@ h6 {
   position: relative;
   margin-left: 10%;
   margin-right: 10%;
-  width: 500px;
-  display: flex;
+  display: grid;
   margin-bottom: 40px;
+  grid-template-columns: 1fr 1fr;
 }
+
 #stat {
   position: relative;
   left: 0%;

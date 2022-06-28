@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/style.css">
     <title>Student Performance</title>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <body>
 <nav class="topnav">
     
@@ -105,10 +106,13 @@
         <p class="score">3.00</p>
         <p class="score-explain">Your score is predicted from your historical data.<br> You need to improve your performance to get a<br> better score!</p>
     </div>
-<div class="score-chart">
+<div id="chart" class="score-chart">
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
 </div>
 </section>
+
 <script>
+    
     const stat0 = document.getElementById("stat0");
     const intro0 = document.getElementById("intro0");
     const stru0 = document.getElementById("stru0");
