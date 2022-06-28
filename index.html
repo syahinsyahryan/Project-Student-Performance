@@ -46,7 +46,7 @@
         </div>
 </div>
 <ul class="class-list">
-    <li>
+    <li id="stat0">
         <div>
             <img src="/assets/img/statistic.svg" alt="Statistics for IT image" />
         </div>
@@ -54,7 +54,7 @@
         <h3>Statistics for <br>IT</h3>
         <h4>Group D</h4>
     </li>
-    <li>
+    <li id="intro0">
         <div>
             <img src="/assets/img/data-integration.svg" alt="Introduction to Data Integration image" />
         </div>
@@ -62,7 +62,7 @@
         <h3>Introduction to <br>Data Integration</h3>
         <h4>Group D</h4>
     </li>
-    <li>
+    <li id="stru0">
         <div>
             <img src="/assets/img/programming.svg" alt="Structured Programming image" />
         </div>
@@ -70,7 +70,7 @@
         <h3>Structured <br>Programming</h3>
         <h4>Group D</h4>
     </li>
-    <li>
+    <li id="mach0">
         <div>
             <img src="/assets/img/data-learning.svg" alt="Machine Data Learning image" />
         </div>
@@ -81,14 +81,67 @@
 </ul>
 </section>
 <section class="score-history">
-    <div class="score-predicted">
+    <div id="stat" class="score-predicted">
         <h1>Hi, Teguh</h1>
         <h2>Your predicted score for Statistic for IT is</h2>
         <p class="score">2.90</p>
         <p class="score-explain">Your score is predicted from your historical data.<br> You need to improve your performance to get a<br> better score!</p>
     </div>
+    <div id="intro" class="score-predicted">
+        <h1>Hi, Teguh</h1>
+        <h2>Your predicted score for Introduction to Data Integration</h2>
+        <p class="score">3.20</p>
+        <p class="score-explain">Your score is predicted from your historical data.<br> You need to improve your performance to get a<br> better score!</p>
+    </div>
+    <div id="stru" class="score-predicted">
+        <h1>Hi, Teguh</h1>
+        <h2>Your predicted score for Structured Programming</h2>
+        <p class="score">3.10</p>
+        <p class="score-explain">Your score is predicted from your historical data.<br> You need to improve your performance to get a<br> better score!</p>
+    </div>
+    <div id="mach" class="score-predicted">
+        <h1>Hi, Teguh</h1>
+        <h2>Your predicted score for Machine Data Learning</h2>
+        <p class="score">3.00</p>
+        <p class="score-explain">Your score is predicted from your historical data.<br> You need to improve your performance to get a<br> better score!</p>
+    </div>
 <div class="score-chart">
 </div>
-</section>    
+</section>
+<script>
+    const stat0 = document.getElementById("stat0");
+    const intro0 = document.getElementById("intro0");
+    const stru0 = document.getElementById("stru0");
+    const mach0 = document.getElementById("mach0");
+    const stat = document.getElementById("stat");
+    const intro = document.getElementById("intro");
+    const stru = document.getElementById("stru");
+    const mach = document.getElementById("mach");
+
+    stat0.addEventListener("click", function onClick(event){
+        stat.style.display = "";
+        intro.style.display = "";
+        stru.style.display = "";
+        mach.style.display = "";
+    })
+    intro0.addEventListener("click", function onClick(event){
+        stat.style.display = "none";
+        intro.style.display = "block";
+        stru.style.display = "";
+        mach.style.display = "";
+    })
+    stru0.addEventListener("click", function onClick(event){
+        stat.style.display = "none";
+        intro.style.display = "";
+        stru.style.display = "block";
+        mach.style.display = "";
+    })
+    mach0.addEventListener("click", function onClick(event){
+        stat.style.display = "none";
+        intro.style.display = "";
+        stru.style.display = "";
+        mach.style.display = "block";
+    })
+</script>
 </body>
 </html>

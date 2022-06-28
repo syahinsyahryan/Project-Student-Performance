@@ -260,11 +260,35 @@ h6 {
   line-height: 30px;
 }
 .score-history {
+  position: relative;
   margin-left: 10%;
   margin-right: 10%;
-  width: 396px;
+  width: 500px;
   display: flex;
   margin-bottom: 40px;
+}
+#stat {
+  position: relative;
+  left: 0%;
+  top: 0%;
+}
+#intro {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  display: none;
+}
+#stru {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  display: none;
+}
+#mach {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  display: none;
 }
 .score-predicted h1 {
   font-size: 48px;
