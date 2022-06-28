@@ -55,9 +55,9 @@
         <div class="mode">
           <p>I'm a...</p>
           <div class="user-mode">
-            <div class="student"><p>Student</p></div>
-            <div class="lecturer"><p>Lecturer</p></div>
-            <div class="staff"><p>Staff</p></div>
+            <div id="std" class="student"><p>Student</p></div>
+            <div id="lec" class="lecturer"><p>Lecturer</p></div>
+            <div id="stf" class="staff"><p>Staff</p></div>
           </div>
         </div>
         <a href="/index.html">
@@ -67,5 +67,37 @@
         </a>
       </div>
     </div>
+    <script>
+      const std = document.getElementById("std");
+      const lec = document.getElementById("lec");
+      const stf = document.getElementById("stf");
+      std.addEventListener("click", function onClick(event) {
+        std.style.backgroundColor = "#707be2";
+        std.style.color = "#ffffff";
+        std.style.borderRadius = "8px";
+        lec.style.backgroundColor = "";
+        lec.style.color = "";
+        stf.style.backgroundColor = "";
+        stf.style.color = "";
+      });
+      lec.addEventListener("click", function onClick(event) {
+        std.style.backgroundColor = "";
+        std.style.color = "";
+        lec.style.backgroundColor = "#707be2";
+        lec.style.color = "#ffffff";
+        lec.style.borderRadius = "8px";
+        stf.style.backgroundColor = "";
+        stf.style.color = "";
+      });
+      stf.addEventListener("click", function onClick(event) {
+        std.style.backgroundColor = "";
+        std.style.color = "";
+        lec.style.backgroundColor = "";
+        lec.style.color = "";
+        stf.style.backgroundColor = "#707be2";
+        stf.style.color = "#ffffff";
+        stf.style.borderRadius = "8px";
+      });
+    </script>
   </body>
 </html>
